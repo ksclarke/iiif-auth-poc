@@ -1,13 +1,13 @@
 
-package info.freelibrary.vertx.template;
+package info.freelibrary.iiif.auth;
 
 /**
- * Template API operation IDs.
+ * IIIF Auth API operation IDs.
  */
 public final class Op {
 
     /**
-     * Mints a new ARK namespace.
+     * Gets the status of the IIIF Auth application
      */
     public static final String GET_STATUS = "getStatus";
 

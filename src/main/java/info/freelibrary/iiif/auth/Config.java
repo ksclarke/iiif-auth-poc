@@ -1,5 +1,5 @@
 
-package info.freelibrary.vertx.template;
+package info.freelibrary.iiif.auth;
 
 /**
  * Properties that are used to configure the application.

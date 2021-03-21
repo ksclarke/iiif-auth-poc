@@ -1,6 +1,6 @@
-# Vert.x Template
+# IIIF Auth PoC
 
-This is a Vert.x template that can be customized for a new project.
+This is just an experimental project.
 
 ## Running in Development
 

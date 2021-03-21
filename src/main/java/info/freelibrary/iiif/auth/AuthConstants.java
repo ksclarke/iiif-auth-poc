@@ -1,10 +1,10 @@
 
-package info.freelibrary.vertx.template;
+package info.freelibrary.iiif.auth;
 
 /**
  * A class of constants .
  */
-public final class TemplateConstants {
+public final class AuthConstants {
 
     public static final String STATUS = "status";
 
@@ -13,7 +13,7 @@ public final class TemplateConstants {
     /*
      * Constant classes have private constructors.
      */
-    private TemplateConstants() {
+    private AuthConstants() {
     }
 
 }

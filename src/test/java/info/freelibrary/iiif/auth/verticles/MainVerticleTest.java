@@ -1,5 +1,5 @@
 
-package info.freelibrary.vertx.template.verticles;
+package info.freelibrary.iiif.auth.verticles;
 
 import org.junit.Before;
 import org.junit.Rule;
@@ -8,8 +8,8 @@ import org.junit.runner.RunWith;
 
 import info.freelibrary.util.HTTP;
 
-import info.freelibrary.vertx.template.Config;
-import info.freelibrary.vertx.template.utils.TestConstants;
+import info.freelibrary.iiif.auth.Config;
+import info.freelibrary.iiif.auth.utils.TestConstants;
 
 import io.vertx.core.DeploymentOptions;
 import io.vertx.core.json.JsonObject;

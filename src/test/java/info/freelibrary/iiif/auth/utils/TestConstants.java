@@ -1,5 +1,5 @@
 
-package info.freelibrary.vertx.template.utils;
+package info.freelibrary.iiif.auth.utils;
 
 /**
  * Constants used in testing.

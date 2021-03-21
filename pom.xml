@@ -3,11 +3,11 @@
   xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>vertx-template</artifactId>
+  <artifactId>iiif-auth-poc</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  <name>Vert.x Template</name>
+  <name>IIIF Auth PoC</name>
   <description></description>
-  <url>https://github.com/ksclarke/vertx-template</url>
+  <url>https://github.com/ksclarke/iiif-auth-poc</url>
 
   <licenses>
     <license>
@@ -17,14 +17,14 @@
   </licenses>
 
   <scm>
-    <connection>scm:git:git@github.com:ksclarke/vertx-template.git</connection>
-    <developerConnection>scm:git:git@github.com:ksclarke/vertx-template.git</developerConnection>
-    <url>git@github.com:ksclarke/vertx-template.git</url>
+    <connection>scm:git:git@github.com:ksclarke/iiif-auth-poc.git</connection>
+    <developerConnection>scm:git:git@github.com:ksclarke/iiif-auth-poc.git</developerConnection>
+    <url>git@github.com:ksclarke/iiif-auth-poc.git</url>
   </scm>
 
   <issueManagement>
     <system>GitHub</system>
-    <url>https://github.com/ksclarke/vertx-template/issues</url>
+    <url>https://github.com/ksclarke/iiif-auth-poc/issues</url>
   </issueManagement>
 
   <properties>
@@ -40,7 +40,7 @@
     <testcontainers.version>1.15.2</testcontainers.version>
 
     <!-- Name of the main Vert.x verticle -->
-    <main.verticle>info.freelibrary.vertx.template.verticles.MainVerticle</main.verticle>
+    <main.verticle>info.freelibrary.iiif.auth.verticles.MainVerticle</main.verticle>
 
     <!-- Configuration properties -->
     <http.port>8888</http.port>

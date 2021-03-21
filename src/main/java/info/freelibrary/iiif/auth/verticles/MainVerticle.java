@@ -1,13 +1,13 @@
 
-package info.freelibrary.vertx.template.verticles;
+package info.freelibrary.iiif.auth.verticles;
 
 import info.freelibrary.util.Logger;
 import info.freelibrary.util.LoggerFactory;
 
-import info.freelibrary.vertx.template.Config;
-import info.freelibrary.vertx.template.MessageCodes;
-import info.freelibrary.vertx.template.Op;
-import info.freelibrary.vertx.template.handlers.StatusHandler;
+import info.freelibrary.iiif.auth.Config;
+import info.freelibrary.iiif.auth.MessageCodes;
+import info.freelibrary.iiif.auth.Op;
+import info.freelibrary.iiif.auth.handlers.StatusHandler;
 
 import io.vertx.config.ConfigRetriever;
 import io.vertx.core.AbstractVerticle;
@@ -24,7 +24,7 @@ public class MainVerticle extends AbstractVerticle {
 
     private static final Logger LOGGER = LoggerFactory.getLogger(MainVerticle.class, MessageCodes.BUNDLE);
 
-    private static final String API_SPEC = "src/main/resources/template.yaml";
+    private static final String API_SPEC = "src/main/resources/iiif-auth.yaml";
 
     private HttpServer myServer;
 
@@ -60,7 +60,7 @@ public class MainVerticle extends AbstractVerticle {
 
                 myServer = getVertx().createHttpServer(serverOptions).requestHandler(routerBuilder.createRouter());
                 myServer.listen().onSuccess(result -> {
-                    LOGGER.info(MessageCodes.TMPL_001, port);
+                    LOGGER.info(MessageCodes.AUTH_001, port);
                     aPromise.complete();
                 }).onFailure(error -> aPromise.fail(error));
             } else {

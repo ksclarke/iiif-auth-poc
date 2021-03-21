@@ -1,9 +1,9 @@
 
-package info.freelibrary.vertx.template.handlers;
+package info.freelibrary.iiif.auth.handlers;
 
 import info.freelibrary.util.HTTP;
 
-import info.freelibrary.vertx.template.TemplateConstants;
+import info.freelibrary.iiif.auth.AuthConstants;
 
 import io.vertx.core.Handler;
 import io.vertx.core.Vertx;
@@ -13,7 +13,7 @@ import io.vertx.core.json.JsonObject;
 import io.vertx.ext.web.RoutingContext;
 
 /**
- * A handler that accepts requests to mint ARKs.
+ * A handler that returns the application status.
  */
 public class StatusHandler implements Handler<RoutingContext> {
 
@@ -23,9 +23,9 @@ public class StatusHandler implements Handler<RoutingContext> {
     private final Vertx myVertx;
 
     /**
-     * Creates a handler that mints ARKs.
+     * Creates a new status handler.
      *
-     * @param aVertx
+     * @param aVertx A Vert.x instance
      */
     public StatusHandler(final Vertx aVertx) {
         myVertx = aVertx;
@@ -36,10 +36,10 @@ public class StatusHandler implements Handler<RoutingContext> {
         final HttpServerResponse response = aContext.response();
         final JsonObject status = new JsonObject();
 
-        status.put(TemplateConstants.STATUS, "ok");
+        status.put(AuthConstants.STATUS, "ok");
 
         response.setStatusCode(HTTP.OK);
-        response.putHeader(HttpHeaders.CONTENT_TYPE, TemplateConstants.JSON).end(status.encodePrettily());
+        response.putHeader(HttpHeaders.CONTENT_TYPE, AuthConstants.JSON).end(status.encodePrettily());
     }
 
     /**
